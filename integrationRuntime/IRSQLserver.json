@@ -1,0 +1,6 @@
+{
+	"name": "IRSQLserver",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
