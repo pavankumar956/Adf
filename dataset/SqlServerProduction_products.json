@@ -1,0 +1,47 @@
+{
+	"name": "SqlServerProduction_products",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "product_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "product_name",
+				"type": "varchar"
+			},
+			{
+				"name": "brand_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "category_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "model_year",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "list_price",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "production",
+			"table": "products"
+		}
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"name": "adls_ds",
+	"name": "Df_Gen2_input",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLake_Ls",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": " ",
+				"fileName": "production.products.txt",
 				"folderPath": "Output",
 				"fileSystem": "demo"
 			},
@@ -21,21 +21,27 @@
 		},
 		"schema": [
 			{
+				"name": "product_id",
 				"type": "String"
 			},
 			{
+				"name": "product_name",
 				"type": "String"
 			},
 			{
+				"name": "brand_id",
 				"type": "String"
 			},
 			{
+				"name": "category_id",
 				"type": "String"
 			},
 			{
+				"name": "model_year",
 				"type": "String"
 			},
 			{
+				"name": "list_price",
 				"type": "String"
 			}
 		]
